@@ -1,5 +1,6 @@
 import time
 
+#the number after "28-" need to changed out with your sensor's number.
 DS18B20 =("/sys/bus/w1/devices/28-051693f345ff/w1_slave")
 
 def rawRead():
