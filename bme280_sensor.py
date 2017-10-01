@@ -33,9 +33,9 @@ def getHumidity():
 	return data.humidity
 
 def getTimeStamp():
-	data = bme280.sample(bus, address, sampling3)
+	data = bme280.sample(bus, address, sampling1)
 	return data.timestamp
 
 def getId():
-	data = bme280.sample(bus, address, sampling3)
+	data = bme280.sample(bus, address, sampling1)
 	return data.id
