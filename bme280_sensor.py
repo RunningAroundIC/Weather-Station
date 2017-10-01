@@ -15,19 +15,27 @@ sampling3 = oversampling.x4
 sampling4 = oversampling.x8
 sampling5 = oversampling.x16
 
+
 def getAllData():
-    data = bme280.sample(bus, address, sampling3)
-    return data
+	data = bme280.sample(bus, address, sampling3)
+	return data
 
 def getTemprature():
-    data = bme280.sample(bus, address, sampling3)
-    return data.temperature
+	data = bme280.sample(bus, address, sampling3)
+	return data.temperature
 
 def getPressure():
-    data = bme280.sample(bus, address, sampling3)
-    return data.pressure
+	data = bme280.sample(bus, address, sampling3)
+	return data.pressure
 
 def getHumidity():
-    data = bme280.sample(bus, address, sampling3)
-    return data.humidity
+	data = bme280.sample(bus, address, sampling3)
+	return data.humidity
 
+def getTimeStamp():
+	data = bme280.sample(bus, address, sampling3)
+	return data.timestamp
+
+def getId():
+	data = bme280.sample(bus, address, sampling3)
+	return data.id
